@@ -20,4 +20,9 @@ export class ItemsController {
   findOne(@Param('id') id) {
     return `Item ${id}`;
   }
+
+  @Post()
+  create(@Body() createItemDto: CreateItemDto): string {
+    return `Name: ${createItemDto.name} Description: ${createItemDto.description} `;
+  }
 }

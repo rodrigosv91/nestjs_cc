@@ -17,4 +17,8 @@ export class ItemsService {
       description: 'Item two description',
     },
   ];
+
+  findAll(): Item[] {
+    return this.items;
+  }
 }

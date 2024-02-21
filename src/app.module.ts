@@ -16,7 +16,7 @@ import { DatabaseConfigService } from './config/DatabaseConfigService';
       useClass: DatabaseConfigService,
     }),
   ],
-  controllers: [AppController, ItemsController],
-  providers: [AppService, ItemsService],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
